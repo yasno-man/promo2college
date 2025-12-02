@@ -184,7 +184,7 @@ h2 {
     padding: 8px;
     margin: 5px 0 15px;
     border-radius: 4px;
-    background: #1e1e1e;
+    background: #e0e0e0;
     border: none;
 }
 #contacts-form textarea { min-height: 100px; resize: vertical; }
