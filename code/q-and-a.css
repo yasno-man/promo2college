@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ------ НАВИГАЦИЯ ------ */
+.header {
+  margin-bottom: 2rem;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link {
+  color: #bb86fc;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+/* ------ ГЛАВНАЯ ------ */
+.page-title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.qa-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.qa-item {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.question {
+  color: #bb86fc;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.answer p {
+  color: #cfcfcf;
+}
+
+
+/* ------ ПОДВАЛ ------ */
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer p {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+
+/* ------ МОБИЛКИ ------ */
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .page-title {
+    font-size: 1.7rem;
+  }
+
+  .question {
+    font-size: 1.15rem;
+  }
+}

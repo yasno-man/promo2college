@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------ НАВИГАЦИЯ ------ */
+.header {
+    padding: 1rem 2rem;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link {
+    color: #bb86fc;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+/* ------ МЕЙН ------ */
+.blog {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog h1 {
+    color: #bb86fc;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+/* ------ СЕТКА ------ */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.blog-item {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.blog-item:hover {
+    transform: translateY(-4px);
+}
+
+.blog-item a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-item h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.blog-item p {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+}
+
+
+/* ------ ПОДВАЛ ------ */
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+
+/* ------ МОБИЛКИ ------ */
+@media (max-width: 600px) {
+    .blog {
+        padding: 1.5rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 1rem;
+    }
+}

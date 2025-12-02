@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обслуживание ПК на выезд – Костя</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4cb42375-4120-4d16-aad0-6a73e441f8b2&lang=ru_RU" type="text/javascript"></script>
+    <script src="/code/yandex_map.js"></script>
+</head>
+<body>
+    <!-- ------ НАВИГАЦИЯ ------ -->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#cases">Работы</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="/code/blog.html">Блог</a></li>
+                <li><a href="/code/q-and-a.html">Q&A</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ------ ГЛАВНАЯ ------ -->
+    <section id="home" class="home">
+        <img src="/assets/home/master_photo_1.jpg" alt="Моё фото" class="home-photo">
+        <h1 class="home-name">Костя Масленников</h1>
+        <p class="home-text">Более 12 лет опыта ремонта компьютерной техники, сотни довольных клиентов и отличная репутация</p>
+        <p class="home-text">Я занимаюсь ремонтом компьютеров и ноутбуков с выездом на дом. Быстро, качественно, по адекватной цене. Если ваш ПК стал медленно работать, не загружается или просто нуждается в обслуживании – я помогу вам! Приеду к вам в любой район за 30 минут или в удобное время. Гарантирую быстрое решение любой проблемы.</p>
+        <ul class="home-benefits">
+            <li>Бесплатная консультация</li>
+            <li>Быстрый ремонт</li>
+            <li>Гарантия 6 месяцев</li>
+        </ul>
+        <div class="home-actions">
+            <button onclick="location.hash='#contacts'">Написать</button>
+            <button onclick="location.hash='#contacts'">Позвонить</button>
+        </div>
+    </section>
+
+
+    <!-- ------ УСЛУГИ ------ -->
+    <section id="services" class="services">
+        <h2>Услуги</h2>
+        <ul class="card-grid">
+            <li class="card">
+                <img src="/assets/services/services_1.jpg" alt="Услуга">
+                <div class="card-title">Диагностика ПК</div>
+                <div class="card-price">500 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_2.png" alt="Услуга">
+                <div class="card-title">Сборка ПК</div>
+                <div class="card-price">от 800 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_3.png" alt="Услуга">
+                <div class="card-title">Установка ОС</div>
+                <div class="card-price">500 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_4.png" alt="Услуга">
+                <div class="card-title">Ремонт мат.платы</div>
+                <div class="card-price">от 600 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_5.jpg" alt="Услуга">
+                <div class="card-title">Замена комплектующих</div>
+                <div class="card-price">от 300 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_6.png" alt="Услуга">
+                <div class="card-title">Ремонт БП</div>
+                <div class="card-price">от 500 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_7.png" alt="Услуга">
+                <div class="card-title">Установка любого ПО</div>
+                <div class="card-price">100 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_8.png" alt="Услуга">
+                <div class="card-title">Восстановление/ремонт дисков</div>
+                <div class="card-price">от 300 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_9.png" alt="Услуга">
+                <div class="card-title">Ремонт/настройка системы охлаждения</div>
+                <div class="card-price">от 350 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_10.png" alt="Услуга">
+                <div class="card-title">Чистка от пыли</div>
+                <div class="card-price">от 700 руб</div>
+            </li>
+            <li class="card">
+                <img src="/assets/services/services_11.png" alt="Услуга">
+                <div class="card-title">Замена клавиатуры ноутбуков</div>
+                <div class="card-price">от 500 руб</div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- ------ РАБОТЫ ------ -->
+    <section id="cases" class="cases">
+        <h2>Примеры работ</h2>
+        <div class="case-list">
+            <article class="case">
+                <h3>Чистка ПК от пыли</h3>
+                <p>Полная разборка системного блока, очистка компонентов и БП. Устранён перегрев и повышен срок службы системы.</p>
+                <p>Цена: 1 500 руб</p>
+                <div class="case-images">
+                    <div class="case-img"><img src="/assets/cases/cases_1_1.png" alt="До"></div>
+                    <div class="case-img"><img src="/assets/cases/cases_1_2.png" alt="После"></div>
+                </div>
+            </article>
+
+            <article class="case">
+                <h3>MacBook Pro не включается</h3>
+                <p>Диагностика, замена памяти и обновление BIOS. Устройство полностью восстановлено.</p>
+                <p>Цена: 8 900 руб</p>
+                <div class="case-images">
+                    <div class="case-img"><img src="/assets/cases/cases_2_1.png" alt="До"></div>
+                    <div class="case-img"><img src="/assets/cases/cases_2_2.png" alt="После"></div>
+                </div>
+            </article>
+
+            <article class="case">
+                <h3>Замена ОЗУ и чистка Dell Inspiron</h3>
+                <p>Очищена система охлаждения, заменена память, установлена свежая Windows и проведена оптимизация.</p>
+                <p>Цена: 5 200 руб</p>
+                <div class="case-images">
+                    <div class="case-img"><img src="/assets/cases/cases_3_1.png" alt="До"></div>
+                    <div class="case-img"><img src="/assets/cases/cases_3_2.png" alt="После"></div>
+                </div>
+            </article>
+
+            <article class="case">
+                <h3>Полный апгрейд Acer Aspire</h3>
+                <p>Замена HDD на SSD, обновление ОЗУ и чистка. Оптимизация системы и драйверов.</p>
+                <p>Цена: 6 700 руб</p>
+                <div class="case-images">
+                    <div class="case-img"><img src="/assets/cases/cases_4_1.png" alt="До"></div>
+                    <div class="case-img"><img src="/assets/cases/cases_4_2.png" alt="После"></div>
+                </div>
+            </article>
+
+            <article class="case">
+                <h3>Сборка геймерского ПК</h3>
+                <p>Подбор и сборка ПК под игры и стриминг. Полная настройка и тестирование.</p>
+                <p>Цена: 68 500 руб</p>
+                <div class="case-images">
+                    <div class="case-img"><img src="/assets/cases/cases_5_1.png" alt="До"></div>
+                    <div class="case-img"><img src="/assets/cases/cases_5_2.png" alt="После"></div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cases-actions">
+            <button onclick="location.hash='#contacts'">Написать</button>
+            <button onclick="location.hash='#contacts'">Позвонить</button>
+        </div>
+    </section>
+
+
+    <!-- ------ ОТЗЫВЫ ------ -->
+    <section id="reviews" class="reviews">
+        <h2>Отзывы</h2>
+        <div class="review-grid">
+            <div class="review">
+                <div class="review-header"><span>Дмитрий М.</span><span>12 апр. 2024</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Договорились в день обращения, быстро нашёл причину, предложил решение, всем доволен. Рекомендую!</p>
+            </div>
+            <div class="review">
+                <div class="review-header"><span>Даниил Л.</span><span>22 янв. 2025</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Мастер 11/10! Очень оперативно помог и всё пофиксил. Рекомендую!</p>
+            </div>
+            <div class="review">
+                <div class="review-header"><span>Елена А.</span><span>08 сент. 2024</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Оперативно и качественно справился с задачей. Спасибо большое!</p>
+            </div>
+            <div class="review">
+                <div class="review-header"><span>Василий Г.</span><span>15 дек. 2023</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Комп не видел половину оперативки. Всё наладили. Приятный, грамотный мастер!</p>
+            </div>
+            <div class="review">
+                <div class="review-header"><span>Анна В.</span><span>30 нояб. 2024</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Помог в трудный момент и решил проблему с компьютером. Очень благодарна!</p>
+            </div>
+            <div class="review">
+                <div class="review-header"><span>Валерий Л.</span><span>05 авг. 2024</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>За полчаса разговора по телефону помог решить проблему, которую в сервисе не нашли за два дня.</p>
+            </div>
+            <div class="review">
+                <div class="review-header"><span>Мария Р.</span><span>27 фев. 2025</span></div>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Быстро помог удалить вирус и решить проблему дистанционно. Спасибо!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------ КОНТАКТЫ ------ -->
+    <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-container">
+            <div class="contacts-info">
+                <p>Телефон: <a href="#">+7 (999) 244-16-91</a></p>
+                <p>Telegram: <a href="#">Ссылка</a></p>
+                <p>WhatsApp: <a href="#">Ссылка</a></p>
+                <p>Email: <a href="mailto:Kostya_SPB@service.ru">Kostya_SPB@service.ru</a></p>
+            </div>
+            <form id="contacts-form" action="https://formspree.io/f/xwpgbqpk" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="map"></div>
+    </section>
+
+    
+    <!-- ------ ПОДВАЛ ------ -->
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#cases">Работы</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="/code/blog.html">Блог</a></li>
+                <li><a href="/code/q-and-a.html">Q&A</a></li>
+            </ul>
+        </nav>
+        <p>Телефон: +7 (999) 244-16-91 | Email: Kostya_SPB@service.ru</p>
+        <p>&copy; 2025 Все права защищены</p>
+    </footer>
+</body>
+</html>
